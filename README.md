@@ -32,3 +32,5 @@ dotnet publish -c Release -r win-x64 --no-self-contained -p:PublishSingleFile=tr
 ```
 
 使用 `--diagnose diagnostics.txt` 参数可以读取一轮设备状态并写入报告。
+
+本项目在开发过程中使用了 AI 辅助编写和整理文档。
