@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <AssemblyName>BatteryWidget</AssemblyName>
+    <ApplicationIcon>BatteryWidget.ico</ApplicationIcon>
+    <Version>0.2.0</Version>
+    <DebugType>embedded</DebugType>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup Condition="Exists('$(NetCoreTargetingPackRoot)/Microsoft.WindowsDesktop.App.Ref/8.0.12')">
+    <KnownFrameworkReference Update="Microsoft.NETCore.App;Microsoft.WindowsDesktop.App;Microsoft.WindowsDesktop.App.WPF;Microsoft.WindowsDesktop.App.WindowsForms;Microsoft.AspNetCore.App"
+                             TargetingPackVersion="8.0.12" />
+    <KnownAppHostPack Update="Microsoft.NETCore.App" AppHostPackVersion="8.0.12" />
+  </ItemGroup>
+</Project>

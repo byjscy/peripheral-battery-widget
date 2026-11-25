@@ -1,0 +1,5 @@
+bin/
+obj/
+.dotnet/
+diagnostics.txt
+运行版/
